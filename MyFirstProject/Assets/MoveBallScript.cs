@@ -15,7 +15,7 @@ public class MoveBallScript : MonoBehaviour {
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             Vector3 vel = rb.velocity;
-            vel.y += 2;
+            vel.x += 2;
             rb.velocity = vel;
         }
 
@@ -23,7 +23,7 @@ public class MoveBallScript : MonoBehaviour {
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             Vector3 vel = rb.velocity;
-            vel.y -= 2;
+            vel.x -= 2;
             rb.velocity = vel;
         }
 
@@ -31,7 +31,7 @@ public class MoveBallScript : MonoBehaviour {
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             Vector3 vel = rb.velocity;
-            vel.x += 2;
+            vel.z -= 2;
             rb.velocity = vel;
         }
 
@@ -39,7 +39,7 @@ public class MoveBallScript : MonoBehaviour {
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             Vector3 vel = rb.velocity;
-            vel.x -= 2;
+            vel.z += 2;
             rb.velocity = vel;
         }
     }
